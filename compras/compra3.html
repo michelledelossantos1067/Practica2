@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/home.css">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgba(214, 227, 253, 0.334);
+        }
+        #selecion{
+            position: relative;
+            top: -270px;
+            background: transparent;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            left: 760px;
+            height: 25px;
+            width: 50px;
+        }
+        option{
+            color: aliceblue;
+            font-size: 15px;
+        }
+        #label{
+            position: relative;
+            top: -270px;
+            background: transparent;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            left: 760px;
+            width: 50px;
+        }
+       .añadir:hover{
+        transition: 2s;
+        background: #fff;
+        color: black;
+        transform: scale(1.1);
+       }
+       .image-carrito2:hover{
+        width:400px;
+        background: #00000031;
+        border: 1px solid rgb(192, 255, 248);
+        border-radius: 5px;
+position: absolute;
+height: 500px;
+left: 1100px;
+top: 60px;
+z-index: 3;
+       }
+    </style>
+</head>
+<body>
+    <nav class="text">
+        <h1><a href="/Home.html">J & D</a></h1>
+        <div class="image2"><a href="registro.html"><img src="/img/perfil.png" alt=""></a>
+        </div>
+        <div class="image-carrito2">
+            <div class="image-carrito">
+                <img src="/img/carrito-de-compras.png" alt="">
+            </div>
+        </div>
+        <ol>
+            <li><a href="">Mujer</a></li>
+            <li><a href="">Curvi</a></li>
+            <li><a href="">Niños</a></li>
+            <li><a href="">Hombres</a></li>
+            <li><a href="">Hogar</a></li>
+        </ol>
+    </nav>
+    <nav class="box">
+        <ul>
+            <li><a href="" class="color">Novedades</a></li>
+            <li><a href="/ropa.html" class="color">Ropa</a></li>
+            <li><a href="/vestidos.html" class="color">Vestidos</a></li>
+            <li><a href="/tops.html" class="color">Tops</a></li>
+            <li><a href="" class="color">Ropa playera</a></li>
+            <li><a href="" class="color">Ropa de deporte</a></li>
+            <li><a href="" class="color">Zapatos y Accesorios</a></li>
+            <li><a href="" class="color">Belleza</a></li>
+        </ul>
+        <input type="text" required="required" id="buscar" placeholder="Buscar productos">
+        <i class="fi fi-bs-search"></i>
+    </nav>
+    <section>
+        <div class="compra" >
+            <img id="image1" src="/img2/t14.webp" alt="" onclick="changeImage()">
+            <script>
+                function changeImage(){
+                    let displayImage = document.getElementById('image1')
+                    if(displayImage.src.match('/img2/t14.webp')){
+                        displayImage.src = '/img/juk5.webp'
+                    }else{
+                        displayImage.src =  '/img2/t14.webp'
+    
+                    }
+                }
+            </script>
+        </div>
+        <nav class="grup">
+            <a href="Home.html"></a>
+            <h4>Hombres 1 pieza Cazadora mezclilla desgarro <br>con bolsillo con solapa
+            </h4>
+            <h2>$87.00</h2>
+            <hr>
+            <button>AÑADIR A LA BOLSA</button>
+        </nav>
+    </section>
+</body>
+</html>
